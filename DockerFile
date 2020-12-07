@@ -1,8 +1,0 @@
-#Docker file for General Spring Boot Exercise
-FROM openjdk:8
-RUN mkdir springapp
-WORKDIR /springapp
-ADD target/*.jar app.jar
-ENTRYPOINT ["java","-jar","app.jar"]
-EXPOSE 8081
-
